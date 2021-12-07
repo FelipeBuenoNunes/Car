@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car 2</title>
+    <link rel="stylesheet" href="set-style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>RandomSpeed</h1>
+    </header>
+    <main>
+        <form id="addNewPilot">
+            <input type="text" name="hello" id="newPilot">
+            <input onclick="addNewPilot()" type="button" value="Add" />
+        </form>
+        <form>
+            <input name="race" type="radio" id="fast" />
+            <label for="fast">Corrida Rápida(10 Voltas)</label>
+            <input name="race" type="radio" id="grand" />
+            <label for="grand">Grande Prêmio(70 Voltas)</label>
+            <input name="race" type="radio" id="enduro" />
+            <label for="enduro">Enduro(160 Voltas)</label>
+        </form>
+        <input onclick="run()" type="button" value="GO!" />
+        <div class="resultado">
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
